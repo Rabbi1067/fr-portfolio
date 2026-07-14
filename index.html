@@ -39,16 +39,18 @@
 
 <!-- ==================== NAV ==================== -->
 <nav id="navbar">
+
+  <!-- Logo -->
   <div class="nav-logo">
     <div class="nav-logo-icon">
       <img src="images/My_pic.jpeg" alt="Fazley Rabbi">
     </div>
     Fazley<span style="color:#00d4aa">.</span>
   </div>
-</nav>
 
+  <!-- Navigation Links -->
   <ul class="nav-links">
-    <li><a href="#home"          class="active">Home</a></li>
+    <li><a href="#home" class="active">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -58,15 +60,23 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 
+  <!-- Right Side -->
   <div class="nav-right">
-    <!-- Dark / Light theme toggle button (logic lives in js/main.js -> toggleTheme()) -->
-    <button class="theme-toggle" id="themeToggle" type="button" title="Toggle dark / light mode" aria-label="Toggle dark and light mode">
-      <!-- Moon icon: shown while site is in DARK mode -->
-      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+
+    <button
+      class="theme-toggle"
+      id="themeToggle"
+      type="button"
+      title="Toggle dark / light mode"
+      aria-label="Toggle dark and light mode">
+
+      <!-- Moon -->
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
       </svg>
-      <!-- Sun icon: shown while site is in LIGHT mode -->
-      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+
+      <!-- Sun -->
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <circle cx="12" cy="12" r="5"/>
         <line x1="12" y1="1" x2="12" y2="3"/>
         <line x1="12" y1="21" x2="12" y2="23"/>
@@ -77,12 +87,17 @@
         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
       </svg>
+
     </button>
-    <button class="nav-hire"
+
+    <button
+      class="nav-hire"
       onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
       Hire Me
     </button>
+
   </div>
+
 </nav>
 
 
